@@ -9,13 +9,14 @@ public abstract class Local {
     protected int NumEmpleados;
     protected float tamaño;
 
-    public Local(){}
+    protected Local(){}
 
-    public Local(String nomLoal, String horario, int numEmpleados, float tamaño) {
+    protected Local(String nomLoal, String horario, int numEmpleados, float tamaño) {
         this.nomLoal = nomLoal;
         this.horario = horario;
         NumEmpleados = numEmpleados;
         this.tamaño = tamaño;
+        CentroComercial.numLocales++;
     }
 
     public String getNomLoal() {

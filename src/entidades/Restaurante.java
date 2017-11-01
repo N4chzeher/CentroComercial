@@ -3,14 +3,14 @@ package entidades;
 /**
  * Created by NACHZEHER on 24/10/2017.
  */
-public class Comedor extends Local {
-    private  String tipoLocal = "Comedor";
+public class Restaurante extends Local {
+    private  String tipoLocal = "Restaurante";
     private  float baseImpue = 1.3f;
 
-    public Comedor(){
+    public Restaurante(){
     }
 
-    public Comedor(String nomLoal, String horario, int numEmpleados, float tamaño) {
+    public Restaurante(String nomLoal, String horario, int numEmpleados, float tamaño) {
         super(nomLoal, horario, numEmpleados, tamaño);
 
 

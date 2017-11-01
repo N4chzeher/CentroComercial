@@ -2,8 +2,6 @@ package aplicacion;
 
 import entidades.*;
 
-import java.security.acl.LastOwnerException;
-
 /**
  * Created by NACHZEHER on 24/10/2017.
  */
@@ -13,19 +11,20 @@ public class Main {
 
         CentroComercial cc = new CentroComercial("Maquinista");
 
-        Local loc = new RopaMasc("Springfild", "10 AM - 9PM", 20, 1200f);
-        Local local = new RopaFem("NAF NAF", "9 am - 7 pm", 5, 900f);
-        Local rm = new RopaMixta("PULL&BEAR", "9 AM - 8 PM", 6, 1200F);
+        Local bar =new Bar("CAÑITAS", "9 AM - 1 AM", 3,625F);
+        Local ropMix = new RopaMixta("PULL&BEAR", "9 AM - 8 PM", 6, 1200F);
+        Local lib = new Libreria("Casa del libro", "9 AM - 8 PM", 10, 1500F);
+        Local rest = new Restaurante("La quinta", "11 AM - 10 PM", 8, 1350f);
+        Local rest2 = new Restaurante("La nona", "11 AM - 10 PM", 10, 1100f);
 
+        Local dep = new TiendaDeportes("Deportes Rojas", "9 AM - 8 PM", 20, 3000F );
 
-
-        cc.addLocal(loc);
-        cc.addLocal(rm);
-        cc.addLocal(local);
-
-        float tot = loc.totalImpuestos();
-
-
+        cc.addLocal(bar);
+        cc.addLocal(ropMix);
+        cc.addLocal(lib);
+        cc.addLocal(rest);
+        cc.addLocal(rest2);
+        cc.addLocal(dep);
 
         System.out.println(cc.toString());
     }

@@ -8,7 +8,7 @@ import java.util.List;
  */
 public class CentroComercial {
     private String nomCentro;
-    private int numLocales = 5;
+    public static int numLocales = 0;
     private ArrayList<Local> locales= new ArrayList<>();
 
     public CentroComercial(String nomCentro) {
